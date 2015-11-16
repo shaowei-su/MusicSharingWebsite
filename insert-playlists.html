@@ -1,0 +1,62 @@
+<html>  
+<head>  
+   <title> Playlist insert </title>
+    <link rel="stylesheet" type="text/css" href="dist/semantic.css">
+    <link rel="stylesheet" type="text/css" href="homepage.css"> 
+</head>  
+  
+  
+<body id="home">
+    <div class="ui inverted masthead segment">
+      <div class="ui page grid">
+        <div class="column">
+          <div class="ui inverted blue menu">
+            <div class="header item"><a href="../~ssu9/index.php">Music Sharing</a></div>
+
+            <div class="right menu">
+              <a class="item" href="../~xxu25/list-songs.php">Song</a>
+              <a class="item" href="list-playlists.php">Playlist</a>
+              <a class="item" href="../~xxu25/list-albums.php">Album</a>
+              <a class="item" href="../~ssu9/list-concerts.php">Concert</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="center aligned ui inverted header">
+  <h2> Concerts - new playlist entry </h2> 
+  <div class="ui inverted segment">
+  <div class="ui grid">
+  <div class="four wide column"></div>
+  <div class="eight wide column">   
+  <form  action = "./insert-playlists.php"  method = "post">  
+        <table class="ui blue table">   
+           <tr>   
+                <td>playlistName </td>  
+                <td><input type  = "text" name = "playlistName" maxlength = "100" size = "30"> </td>  
+           </tr>  
+           <tr>  
+                <td>createDate </td>  
+                <td><input type = "date" name = "createDate" size = "30"> </td>  
+           </tr>  
+           <tr>  
+                <td>username </td>  
+                <td><input type  = "text" name = "username" maxlength = "100" size = "30"> </td>  
+           </tr>  
+           <tr>  
+                 <td colspan = "2"><input type = "submit" value = "SAVE" name = "save" ></td>
+                 <td colspan = "2"><input type = "submit" value = "CANCEL" name = "cancel"></td> 
+           </tr>  
+     </table>  
+   </form>
+ </div>
+ </div>
+    <div class="ui inverted vertical segment">
+    </div>
+    <div class="ui inverted vertical segment">
+    </div>
+   </div>  
+ </div>
+ </div> 
+</body>
+
+</html> 
